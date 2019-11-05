@@ -1,0 +1,1 @@
+cmake-bin\cmake.exe --build cmake-build-debug --target server -- -j 2

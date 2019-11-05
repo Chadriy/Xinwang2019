@@ -1,0 +1,56 @@
+{
+  "mainConfig": {
+    "nodeCount": 80,
+    "timeOut": 2.9,
+    "masterIp": "127.0.0.1",
+    "masterPort": 8002,
+    "testData": "testData.json",
+    "serverConfData": "server.json",
+    "clinetConfData": "client.json"
+  },
+  "queryConfig": {
+    "queryRate": 6,
+    "halfFloating": 0.05,
+    "delay": [
+      0.6,
+      2.1
+    ],
+    "queryCount": 730,
+    "queryType": 3,
+    "starConfig": {
+      "groupCount": 3,
+      "prob": 0.1
+    },
+    "bioConfig": {
+      "leftCount": 40
+    },
+    "groupConfig": {
+      "groupCount": 3
+    }
+  },
+  "nodeConfig": {
+    "baseCount": 5,
+    "halfFloating": 1
+  },
+  "channelConfig": {
+    "highSpeed": {
+      "lag": 0.03,
+      "maxCount": 210,
+      "buildTime": 1.2,
+      "maxMessageCount": 18
+    },
+    "normalSpeed": {
+      "lag": 0.1,
+      "maxCount": 450,
+      "buildTime": 0.9,
+      "maxMessageCount": 20
+    }
+  },
+  "messageConfig": {
+    "maxPendingMsgSize": 4096,
+    "maxCallMsgSize": 1024,
+    "maxInnerMsgSize": 5120
+  },
+  "index": -1,
+  "maxChannelConn": -1
+}
